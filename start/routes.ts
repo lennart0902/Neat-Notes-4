@@ -20,3 +20,8 @@ Route.on('/').render('pages/home')
 Route.get('kategories', async ({ view }) => {
     return view.render('kategories')
 })
+
+Router.get('/', async ({ view }) => {
+return view.render('index')
+
+})
