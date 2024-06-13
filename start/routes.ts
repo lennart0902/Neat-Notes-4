@@ -20,13 +20,10 @@ router.get('/', async ({ view }) => {
 
 })
 
+router.get('/home', async ({ view }) => {
+    return view.render('pages/home')
 
 
+});
 
-
-
-//Router.get('/kategories', async ({ view }) => {
-//    return view.render('pages/kategories')
-//})
-
-
+kdkkd
