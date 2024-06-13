@@ -8,11 +8,12 @@
 </head>
 <body>
     <h1>Notiz erstellen</h1>
-    <form action="/notizen/speichern" method="post">
-        <label for="title">Titel:</label><br>
+    <form action="/home/Notizen" method="post">
+        {{ csrfField() }}
+        <label name="title">Titel:</label><br>
         <input type="text" id="title" name="title"><br>
-        <label for="content">Inhalt:</label><br>
-        <textarea id="content" name="content"></textarea><br>
+        <label name="inhalt">Inhalt:</label><br>
+        <textarea id="content" name="inhalt"></textarea><br>
         <input type="submit" value="Speichern">
     </form>
 </body>

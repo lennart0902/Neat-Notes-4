@@ -26,4 +26,15 @@ router.get('/home', async ({ view }) => {
 
 });
 
-kdkkd
+router.get('/Notizen', async ({ view }) => {
+    return view.render('pages/Notizen')
+
+
+});
+
+router.post('/home/Notizen', async ({ request, view }) => {
+    const Titel = request.input('title')
+    const Inhalt = request.input('inhalt')
+    return view.render('pages/Notizen', {Titel, Inhalt})
+
+})
